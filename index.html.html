@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Sarthak Mahajan - Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        body {
+            background: #f4f4f9;
+            color: #333;
+            line-height: 1.6;
+            background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            color: white;
+            padding: 4rem 0;
+            text-align: center;
+            position: relative;
+            background-image: linear-gradient(-225deg, #473B7B 0%, #3584A7 51%, #30D2BE 100%);
+            
+
+        }
+
+        header h1 {
+            font-size: 3rem;
+            font-weight: 700;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin-top: 0.5rem;
+        }
+
+        nav {
+            background: #fff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            
+            background-image: linear-gradient(-225deg, #FFFEFF 0%, #D7FFFE 100%);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 1rem 0;
+        }
+
+        nav ul li {
+            margin: 0 2rem;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #2a5298;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #1e3c72;
+        }
+
+        /* Sections */
+        section {
+            padding: 4rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        section h2 {
+            font-size: 2.5rem;
+            color: #1e3c72;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .card {
+            background: #fff;
+            border-radius: 10px;
+            padding: 2rem;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+            margin-bottom: 2rem;
+            background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+        }
+
+        .card:hover {
+            transform: translateY(-40px);
+        }
+
+        /* About Section with Profile Image */
+        .about-container {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+            color: #021f49;
+        }
+
+        .profile-img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #2a5298;
+        }
+
+        .about-text {
+            flex: 1;
+        }
+
+        /* Skills */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .skill-item {
+            text-align: center;
+        }
+
+        .skill-item i {
+            font-size: 2rem;
+            color: #2a5298;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Projects */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .project-card img {
+            width: 100%;
+            border-radius: 10px 10px 0 0;
+        }
+
+        .project-card h3 {
+            margin: 1rem 0;
+            color: #1e3c72;
+        }
+
+        .project-card a {
+            color: #2a5298;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .project-card a:hover {
+            text-decoration: underline;
+        }
+
+        /* Contact */
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .contact-item {
+            text-align: center;
+        }
+
+        .contact-item i {
+            font-size: 1.5rem;
+            color: #2a5298;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Footer */
+        footer {
+            background: #1e3c72;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Sarthak Mahajan</h1>
+        <p>Aspiring Cloud Engineer | DevOps Enthusiast</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- About Section with Profile Image -->
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="card">
+            <div class="about-container">
+                <img src="Untitled(1) (1).jpg" alt="Sarthak Mahajan" class="profile-img">
+                <div class="about-text">
+                    <p>Aspiring DevOps Engineer with hands-on experience in cloud computing, CI/CD pipelines, and configuration management tools. Skilled in automating deployment processes and optimizing cloud infrastructure using tools like AWS, Jenkins, Docker, and Ansible. A motivated individual with strong problem-solving and time-management skills, eager to contribute to scalable and efficient development workflows.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Technical Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-item"><i class="fas fa-cloud"></i><p>AWS (EC2, S3, RDS, ELB)</p></div>
+            <div class="skill-item"><i class="fas fa-tools"></i><p>Jenkins</p></div>
+            <div class="skill-item"><i class="fab fa-docker"></i><p>Docker</p></div>
+            <div class="skill-item"><i class="fas fa-cogs"></i><p>Ansible</p></div>
+            <div class="skill-item"><i class="fab fa-python"></i><p>Python</p></div>
+            <div class="skill-item"><i class="fas fa-terminal"></i><p>Shell Scripting</p></div>
+            <div class="skill-item"><i class="fab fa-linux"></i><p>Linux</p></div>
+            <div class="skill-item"><i class="fab fa-git"></i><p>Git/GitHub</p></div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card card">
+                <h3><a href="https://github.com/sartz2007">V-Profile Project Setup on VMs</a></h3>
+                <p>Deployed a multi-tier web application on virtual machines using Vagrant, automating VM provisioning and improving server setup efficiency. Demonstrated foundational skills in Linux server management and basic networking.</p>
+            </div>
+            <div class="project-card card">
+                <h3><a href="https://github.com/sartz2007">AWS Cloud: Lift & Shift and Web App Re-Architecture</a></h3>
+                <p>Migrated a traditional web application to AWS Cloud utilizing EC2, RDS, ELB, S3, and CloudWatch. Re-architected the application using AWS PAAS and SAAS services, enhancing scalability and availability.</p>
+            </div>
+            <div class="project-card card">
+                <h3><a href="https://github.com/sartz2007">Continuous Integration with Jenkins</a></h3>
+                <p>Designed a CI pipeline using Jenkins for building, testing, and deploying Java applications. Integrated tools like Nexus for artifact management, SonarQube for code quality checks, and Slack for automated notifications.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education">
+        <h2>Education</h2>
+        <div class="card">
+            <h3>Walchand Institute of Technology, Solapur</h3>
+            <p>B.Tech in Electronics & Computer Engineering (ECE) | CGPA: 8.27 | 08/2019 - 06/2023</p>
+        </div>
+        <div class="card">
+            <h3>National Science Junior College, Akola</h3>
+            <p>HSC | Percentage: 91.17% | 06/2016 - 05/2018</p>
+        </div>
+        <div class="card">
+            <h3>Saint Anne's High School, Murtizapur</h3>
+            <p>SSC | Percentage: 78.2% | 06/2014 - 05/2016</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <div class="contact-info">
+            <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <p><a href="mailto:sarthakmahajan008464@gmail.com">sarthakmahajan008464@gmail.com</a></p>
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-phone"></i>
+                <p>(+91) 9096698821</p>
+            </div>
+            <div class="contact-item">
+                <i class="fab fa-linkedin"></i>
+                <p><a href="https://www.linkedin.com/in/sarthak-mahajan-8bb61a245/">LinkedIn</a></p>
+            </div>
+            <div class="contact-item">
+                <i class="fab fa-github"></i>
+                <p><a href="https://github.com/sartz2007">GitHub</a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Sarthak Mahajan. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
